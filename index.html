@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zach's Folio</title>
+
+	<!--Stylesheets and Google Fonts-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" />
+
+	<!--jQuery and Bootstrap scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery-1.7.2.js" type="text/javascript"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/bootstrap-transition.js"></script>
+</head>
+<body>
+	
+	<!-- HEADER -->
+
+	<div id="header">
+		<div class="container">
+			<h1 id="logo"><a href="index.html">Zach Burns</a></h1>
+			<ul class="navigation">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- NEWEST BLOG -->
+	<div id="newest-blog" class="container">
+		<div class="row">
+			<div class="span2 content-box">
+				<img class="blog-photo" src="images/blog-photo.png" alt="blog picture">
+			</div>
+			<div class="span10">
+				<div class="blog content-box">
+					<p>This is the first and newest blog post on the site</p>
+					<div class="blog-info">
+						<p>Blog Title</p>
+						<a href="#">Read More...</a>
+					</div>
+				</div>
+				<a href="#" class="button small">More Blogs</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="portfolio">
+		<div class="container">
+			<h2>Portfolio</h2>
+			<!-- PORTFOLIO IMAGES -->
+			<div class="portfolio-box">
+				<ul class="row">
+					<li class="active span3">
+						<a href="#project1" data-toggle="pill"><img src="images/portfolio/rogue.png" alt="Portfolio Image"></a>
+					</li>
+					<li class="active span3">
+						<a href="#project2" data-toggle="pill"><img src="images/portfolio/github.png" alt="Portfolio Image"></a>
+					</li>
+					<li class="active span3">
+						<a href="#project3" data-toggle="pill"><img src="images/portfolio/newProject.png" alt="Portfolio Image"></a>
+					</li>
+				</ul>
+
+				<!-- SINGLE PROJECT DETAILS -->
+				<div class="tab-content">
+					<div class="tab-pane active fade in" id="project1">
+						<div class="row">
+							<div class="span5">
+								<h3>Rogue Style Game</h3>
+								<p>This is a game based on the 80's terminal</p>
+								<p>game Rogue. It is a dungeon based strategy game.</p>
+								<a href="#" class="large button">Visit Website</a>
+							</div>
+							<div class="span7">
+								<img src="images/portfolio/rogue.png" alt="Rogue Style Game">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="tab-pane fade" id="project2">
+						<div class="row">
+							<div class="span5">
+								<h3>Github Account</h3>
+								<p>These are repositories of the work I have done</p>
+								<p>in the past.</p>
+								<a href="#" class="large button">Visit Website</a>
+							</div>
+							<div class="span7">
+								<img src="images/portfolio/github.png" alt="Github site">
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="project3">
+						<div class="row">
+							<div class="span5">
+								<h3>Contact for new projects</h3>
+								<p>I am more than glad to take on any projects you may have.</p>
+								<p>Simply use the form below to contact me with any questions.</p>
+								<a href="#" class="large button">Visit Website</a>
+							</div>
+							<div class="span7">
+								<img src="images/portfolio/newProject.png" alt="Rogue Style Game">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ABOUT -->
+	<div id="about" class="container">
+		<div class="row">
+			<div class="span4">
+				<h2>About</h2>
+				<div class="content-box rotate">
+					<div class="content-box about-image">
+						<img src="images/aboutPhoto.png" alt="About photo">
+					</div>
+				</div>
+				<p>Hello! My name is Zach Burns. I am an electrical engineering</p>
+				<p>graduate from the University of Kentucky. I am combining my</p>
+				<p>creativity with my skills as an engineer to start my career.</p>
+				<p>If would like to contact me about a web design project or job</p>
+				<p>of any kind do not hesitate to contact me via the form below.</p>
+			</div>
+
+			<div class="span8">
+				<h2>Blogs</h2>
+				<div class="blog content-box">
+					<p>This is where the second blog post will be...</p>
+					<div class="blog-info">
+						<p>Blog Title</p>
+						<a href="#">Read more...</a>
+					</div>
+				</div>
+				<div class="blog content-box">
+					<p>This is where the third blog post will be...</p>
+					<div class="blog-info">
+						<p>Blog Title</p>
+						<a href="#">Read more...</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="span5" id="twitter-feed">
+					<h2>Twitter Feed</h2>
+					<a href="http://twitter.com/zachburns12">Follow me &raquo;</a>
+					<div class="tweets">
+						<p>This is tweet number one</p>
+						<p>This is tweet number two</p>
+						<p>This is tweet number three</p>
+					</div>
+				</div>
+
+				<div class="span7" id="contact">
+					<h2>Contact</h2>
+					<form method="post" action="#">
+						<input class="content-box" type="text" name="name" placeholder="Name" />
+						<input class="content-box" type="text" name="email" placeholder="Email" />
+						<textarea class="content-box" name="message" placeholder="Message"></textarea>
+						<input type="submit" name="send" value="Send"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- COPYRIGHT -->
+	<div id="copyright">
+		<div class="container">
+			<p>Copyright &copy; Zach Burns 2013</p>
+		</div>
+	</div>
+
+</body>
+</html>
